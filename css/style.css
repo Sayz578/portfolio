@@ -1,7 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+:root {
+	--primary-color-black: #111214;
+	--primary-color-main-color: #fe390c;
+	--secondary-color-grey-100: #a7aab4;
+	--secondary-color-grey-10: #f7f7f7;
+	--text-color-black: #111214;
+	--text-color-grey: #a9a9aa;
+	--ui-color-primary: #6750a3;
+
+    --font-family: "Montserrat", sans-serif;
+    --second-family: "Anton", sans-serif;
+}
+
+body{
+    font-family: var(--font-family);
 }
 
 .header{
@@ -20,11 +40,16 @@
     gap: 15px;
 }
 
-.link, .logo{
+.link{
     text-decoration: none;
-    color: #000;
-    font-size: 20px;
+    color: var(--text-color-grey);
+    font-size: 12px;
     text-transform: uppercase;
+    transition: .3s linear;
+}
+
+.link:hover{
+    color: var(--primary-color-main-color);
 }
 
 .burger{
