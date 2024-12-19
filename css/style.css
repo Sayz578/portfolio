@@ -54,6 +54,18 @@ body {
     color: var(--text-color-white);
 }
 
+.text-orange {
+    color: var(--primary-color-main-color);
+}
+
+.data-number {
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 64px;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+}
+
 /* header */
 
 .header {
@@ -171,6 +183,74 @@ body {
 }
 
 /* end header */
+
+
+/* section about */
+
+.about {
+    padding: 90px 0 85px 0;
+}
+
+.about .container {
+    display: flex;
+    justify-content: center;
+    gap: 65px;
+    flex-wrap: wrap;
+}
+
+.about-block,
+.about-content {
+    max-width: 521px;
+    width: 100%;
+}
+
+.about-block {
+    display: flex;
+    gap: 60px;
+}
+
+.about-info {
+    width: 151px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 12px;
+    text-align: right;
+}
+
+.about-text {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.43;
+    letter-spacing: -0.04em;
+}
+
+.about-item {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: flex-end;
+}
+
+.about-item:nth-child(2) {
+    flex-direction: column-reverse;
+    padding-top: 30px;
+}
+
+.about-item:nth-child(2) {
+    align-items: flex-start;
+}
+
+.about-item:nth-child(2) .about-info{
+    flex-direction: row;
+}
+
+.about-item:nth-child(2) .about-text{
+    text-align: left;
+}
+
+/* end section about */
+
 
 @media(max-width:980px) {
     .nav {
