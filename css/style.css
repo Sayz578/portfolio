@@ -424,6 +424,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-bottom: 63px;
 }
 
 .portfolio-list {
@@ -442,7 +443,8 @@ body {
     transition: .3s linear;
 }
 
-.portfolio-item:hover {
+.portfolio-item:hover,
+.portfolio-item.active {
     border: 1px solid var(--primary-color-main-color);
     border-radius: 4px;
     color: var(--primary-color-main-color);
@@ -454,7 +456,7 @@ body {
     background-color: var(--primary-color-main-color);
     position: absolute;
     right: 64px;
-    top: -65px;
+    top: -128px;
     z-index: 10;
 }
 
@@ -464,7 +466,7 @@ body {
     background-color: var(--primary-color-main-color);
     position: absolute;
     right: 0;
-    top: -65px;
+    top: -128px;
     z-index: 10;
 }
 
@@ -514,6 +516,27 @@ body {
     letter-spacing: -0.04em;
     color: #fff;
     text-align: center;
+}
+
+.slick-dots {
+    display: flex;
+    justify-content: center;
+    gap: 4px;
+    margin-top: 40px;
+}
+
+.slick-dots button {
+    font-size: 0;
+    border-radius: 1px;
+    width: 15px;
+    height: 3px;
+    background: #e0e0e0;
+    transition: .3s linear;
+}
+
+li.slick-active button {
+    background: var(--primary-color-main-color);
+    
 }
 
 /* end portfolio */
