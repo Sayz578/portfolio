@@ -543,6 +543,10 @@ li.slick-active button {
 
 /* testimonial */
 
+.testimonial {
+    padding: 120px 0;
+}
+
 .testimonial-top {
     display: flex;
     justify-content: space-between;
@@ -625,6 +629,22 @@ li.slick-active button {
     color: var(--text-color-grey);
 }
 
+.testimonial-slider .slider-left {
+    top: auto;
+    bottom: 0;
+    right: 64px;
+}
+.testimonial-slider .slider-right {
+    top: auto;
+    bottom: 0;
+    right: 0;
+}
+
+.testimonial-slider ul.slick-dots {
+    margin-top: -25px;
+    position: relative;
+    z-index: 5;
+}
 /* end testimonial */
 
 @media(max-width:980px) {
