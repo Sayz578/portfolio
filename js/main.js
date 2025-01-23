@@ -35,3 +35,6 @@ $(document).ready(function () {
         sliderNumber.text(`/${number}`)       
     })
 });
+
+const year = new Date().getFullYear()
+document.querySelector(".yaer").textContent = year
