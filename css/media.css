@@ -1,3 +1,17 @@
+:root {
+    --primary-color-black: #111214;
+    --primary-color-main-color: #fe390c;
+    --secondary-color-grey-100: #a7aab4;
+    --secondary-color-grey-10: #f7f7f7;
+    --text-color-black: #111214;
+    --text-color-white: #fff;
+    --text-color-grey: #a9a9aa;
+    --ui-color-primary: #6750a3;
+
+    --font-family: "Montserrat", sans-serif;
+    --second-family: "Anton", sans-serif;
+}
+
 @media(max-width:1160px) {
     .container {
         padding: 0 16px;
@@ -10,10 +24,11 @@
     .nav {
         display: flex;
         flex-direction: column;
+        gap: 20px;
         height: 100vh;
         justify-content: center;
         align-items: center;
-        background: #816262;
+        background: var(--primary-color-black);
         width: 100vw;
         position: absolute;
         left: 0;
@@ -23,12 +38,26 @@
 
     .nav.active {
         top: 0;
+        z-index: 1;
     }
 
     .menu {
         flex-direction: column;
+        gap: 20px;
         width: 100%;
         align-items: center;
+        flex: none;
+    }
+
+    .contact-link {
+        width: 150px;
+        text-align: center;
+        font-size: 20px;
+        height: 50px;
+    }
+
+    .link {
+        font-size: 24px;
     }
 
     .burger {
@@ -37,14 +66,54 @@
         height: 35px;
         background: url(../images/burger.svg) no-repeat center;
         cursor: pointer;
+        position: relative;
+        z-index: 2;
     }
     .burger.active{
         background: url(../images/burger-close.svg) no-repeat center;
     }
+
+    .header-title {
+        font-size: 115px;
+    }
+
+    .work-wrapper h2 {
+        text-align: center;
+        font-size: 30px;
+    }
+
+    .work-wrapper {
+        padding: 75px 10px 80px 10px;
+    }
 }
 
-@media(max-width:590px) {}
+@media(max-width:590px) {
+    .header-title {
+        font-size: 80px;
+    }
 
-@media(max-width:450px) {}
+    .about-block {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 
-@media(max-width:390px) {}
+    .about-descript {
+        padding-left: 0;
+    }
+}
+
+@media(max-width:450px) {
+    .header-title {
+        font-size: 65px;
+    }
+}
+
+@media(max-width:390px) {
+    .header-title {
+        font-size: 50px;
+    }
+
+    .work-wrapper h2 {
+        font-size: 25px;
+    }
+}
