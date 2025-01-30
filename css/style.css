@@ -319,6 +319,7 @@ body {
 .work-wrapper h2 {
     font-family: var(--second-family);
     font-size: 40px;
+    font-weight: 400;
     letter-spacing: 0.02em;
     text-transform: capitalize;
     color: #fff;
@@ -365,6 +366,8 @@ body {
 
 .service-wrapper {
     display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     margin-top: 55px;
     gap: 60px;
 }
@@ -374,6 +377,8 @@ body {
     padding: 40px 30px 30px 20px;
     cursor: pointer;
     transition: 0.3s linear;
+    width: 100%;
+    max-width: 230px;
 }
 
 .service-card svg {
@@ -428,10 +433,13 @@ body {
     align-items: center;
     justify-content: space-between;
     margin-bottom: 63px;
+    gap: 30px;
+    flex-wrap: wrap;
 }
 
 .portfolio-list {
     display: flex;
+    flex-wrap: wrap;
     gap: 12px;
 }
 
@@ -561,6 +569,10 @@ li.slick-active button {
     display: flex;
     gap: 50px;
     justify-content: space-between;
+}
+
+.media-title{
+    display: none;
 }
 
 .testimonial-slide figure {
