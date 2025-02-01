@@ -771,7 +771,10 @@ li.slick-active button {
     font-size: 12px;
     letter-spacing: -0.02em;
     color: rgba(169, 169, 170, 0.6);
+    transition: .3s linear;
 }
+
+
 
 .form textarea {
     border-radius: 2px;
@@ -785,6 +788,12 @@ li.slick-active button {
     font-size: 12px;
     letter-spacing: -0.02em;
     color: rgba(169, 169, 170, 0.6);
+    transition: .3s linear;
+}
+
+.form-block input:focus,
+.form textarea:focus{
+    outline: 1px solid var(--primary-color-main-color);
 }
 
 .message {
