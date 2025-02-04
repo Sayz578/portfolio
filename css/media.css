@@ -61,15 +61,16 @@
         align-items: center;
         background: var(--primary-color-black);
         width: 100vw;
-        position: absolute;
+        position: fixed;
         left: 0;
         top: -1000px;
         transition: .9s linear;
+        z-index: 11;
     }
 
     .nav.active {
         top: 0;
-        z-index: 1;
+        z-index: 11;
     }
 
     .menu {
@@ -97,8 +98,8 @@
         height: 35px;
         background: url(../images/burger.svg) no-repeat center;
         cursor: pointer;
-        position: relative;
-        z-index: 2;
+        position: fixed;
+        z-index: 15;
     }
     .burger.active{
         background: url(../images/burger-close.svg) no-repeat center;
