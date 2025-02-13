@@ -90,6 +90,7 @@ body {
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
+    padding-top: 87px;
 }
 
 .header-top {
@@ -97,6 +98,19 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: fixed;
+    z-index: 3;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: transparent;
+    transition: .3s linear;
+}
+
+.header-top.active{
+    background: var(--primary-color-black);
+    padding: 19px 15px;
+    box-shadow: 0 5px 4px rgba(0, 0, 0, 0.59);
 }
 
 .nav {
@@ -468,7 +482,7 @@ body {
     position: absolute;
     right: 64px;
     top: -128px;
-    z-index: 10;
+    z-index: 2;
 }
 
 .slider-right {
@@ -478,7 +492,7 @@ body {
     position: absolute;
     right: 0;
     top: -128px;
-    z-index: 10;
+    z-index: 2;
 }
 
 .portfolio-btn {
@@ -659,7 +673,7 @@ li.slick-active button {
 .testimonial-slider ul.slick-dots {
     margin-top: -25px;
     position: relative;
-    z-index: 5;
+    z-index: 2;
 }
 
 /* end testimonial */

@@ -71,3 +71,15 @@ $(document).ready(function () {
 
 const year = new Date().getFullYear()
 document.querySelector(".yaer").textContent = year
+
+// header fixed
+
+const headerTop = document.querySelector(".header-top")
+
+window.addEventListener("scroll", function(){
+    if(window.scrollY > 1){
+        headerTop.classList.add("active")
+    } else {
+        headerTop.classList.remove("active")
+    }
+})
