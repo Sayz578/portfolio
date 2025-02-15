@@ -83,3 +83,19 @@ window.addEventListener("scroll", function(){
         headerTop.classList.remove("active")
     }
 })
+
+const links = document.querySelectorAll(".link")
+// console.log(links);
+for (let i = 0; i < links.length; i++) {
+    const element = links[i];
+    // console.log(element);
+    element.addEventListener("click", function(){
+        for (let i = 0; i < links.length; i++) {
+            const link = links[i];
+            link.classList.remove("active")
+        }
+        
+        element.classList.add("active")
+    })
+    
+}
