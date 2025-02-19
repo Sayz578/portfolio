@@ -4,6 +4,7 @@ const nav = document.querySelector(".nav")
 burger.addEventListener("click", function () {
     burger.classList.toggle("active")
     nav.classList.toggle("active")
+    document.body.classList.toggle("hedden")
 })
 
 $(document).ready(function () {
@@ -75,6 +76,7 @@ document.querySelector(".yaer").textContent = year
 // header fixed
 
 const headerTop = document.querySelector(".header-top")
+const btnUp = document.querySelector(".arrow-up")
 
 window.addEventListener("scroll", function(){
     if(window.scrollY > 1){
@@ -99,3 +101,21 @@ for (let i = 0; i < links.length; i++) {
     })
     
 }
+
+// button up
+window.addEventListener("scroll", function(){
+    if(this.window.scrollY > 300){
+        btnUp.classList.add("active")
+    } else {
+        btnUp.classList.remove("active")
+    }
+
+})
+
+
+btnUp.addEventListener("click", function () {
+    window.scrollTo({
+        top:0,
+        behavior:"smooth"
+    })
+})
