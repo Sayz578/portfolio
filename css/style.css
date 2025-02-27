@@ -294,8 +294,7 @@ main {
     flex-wrap: wrap;
 }
 
-.about-block,
-.about-content {
+.about-block {
     max-width: 521px;
     width: 100%;
 }
@@ -362,15 +361,7 @@ main {
     margin-bottom: 15px;
 }
 
-.aboutme {
-    padding: 80px 0 120px 0;
-}
 
-.aboutme .about-block {
-    gap: 0;
-    max-width: 485px;
-    width: 100%;
-}
 
 /* end section about */
 
@@ -916,3 +907,86 @@ li.slick-active button {
 
 
 /* end footer */
+
+/* aboutme */
+
+.aboutme {
+    padding: 80px 0 120px 0;
+}
+
+.aboutme .about-block {
+    gap: 0;
+    max-width: 485px;
+    width: 100%;
+}
+
+.container-aboutme {
+    display: flex;
+    gap: 73px;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.container-aboutme .about-descript {
+    padding-left: 0;
+    max-width: 558px;
+    width: 100%;
+}
+
+.container-aboutme .about-content {
+    max-width: 578px;
+    width: 100%;
+}
+
+.container-aboutme .about-descript:last-of-type {
+    margin-bottom: 0;
+}
+
+.aboutme-title {
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 32px;
+    text-transform: capitalize;
+    color: #000;
+    margin-bottom: 15px;
+}
+
+.aboutme .inner-title {
+    margin-bottom: 44px;
+}
+
+.container-aboutme .about-item {
+    flex-direction: row;
+    margin-top: 32px;
+    align-items: flex-start;
+    gap: 64px;
+}
+
+.container-aboutme .about-info {
+    flex-direction: row;
+    text-align: left;
+}
+
+/* end aboutme */
+
+/* skills */
+
+.skills {
+    background: var(--secondary-color-grey-10);
+    padding: 80px 150px;
+}
+
+.container-skills {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 97px;
+}
+
+.skills-content {
+    max-width: 485px;
+    width: 100%;
+}
+
+/* end skills */
