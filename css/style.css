@@ -71,6 +71,14 @@ main {
     /* background: green; */
 }
 
+.inner-text {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 2.29;
+    letter-spacing: -0.02em;
+    color: var(--text-color-grey);
+}
+
 .arrow-up {
     display: flex;
     position: fixed;
@@ -987,6 +995,19 @@ li.slick-active button {
 .skills-content {
     max-width: 485px;
     width: 100%;
+}
+
+.skills-text {
+    margin: 12px 0 32px 0;
+}
+
+.skills-link {
+    display: block;
+    width: 148px;
+    height: 47px;
+    border-radius: 4px;
+    padding: 16px 0px;
+    text-align: center;
 }
 
 /* end skills */
