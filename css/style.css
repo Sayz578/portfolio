@@ -1010,4 +1010,70 @@ li.slick-active button {
     text-align: center;
 }
 
+.skills-sidebar {
+    max-width: 558px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.skill-item {
+    position: relative;
+}
+
+.skill-name {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.43;
+    letter-spacing: -0.04em;
+    color: var(--primary-color-black);
+    margin-bottom: 12px;
+}
+
+.skill-bar {
+    border-radius: 24px;
+    width: 100%;
+    height: 6px;
+    background: #dddee0;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.skill-level {
+    border-radius: 24px;
+    height: 6px;
+    background: var(--primary-color-main-color);
+}
+
+.ui-level{
+    width: 90%;
+}
+
+.fr-level{
+    width: 85%;
+}
+
+.gr-level{
+    width: 70%;
+}
+
+.pr-level{
+    width: 65%;
+}
+
+
+.skill-pers {
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.43;
+    letter-spacing: -0.04em;
+    text-align: right;
+    color: var(--primary-color-black);
+}
+
 /* end skills */
