@@ -126,9 +126,10 @@ main {
     gap: 24px;
 }
 
-.inner-title .text-orange{
+.inner-title .text-orange {
     font-size: 80px;
 }
+
 /* header */
 
 .header {
@@ -1145,3 +1146,28 @@ li.slick-active button {
     transform: translateY(120px);
     margin-bottom: 120px;
 }
+
+/* mypartners */
+
+.mypartners {
+    background: var(--secondary-color-grey-10);
+    padding: 60px 0;
+}
+
+.mypartners-title {
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.mypartners-wrapper {
+    display: flex;
+    column-gap: 80px;
+    row-gap: 56px;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 974px;
+    width: 100%;
+    margin: 0 auto 80px;
+}
+
+/* end mypartners */
