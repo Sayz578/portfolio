@@ -30,6 +30,10 @@ a {
     color: inherit;
 }
 
+img {
+    max-width: 100%;
+}
+
 button {
     border: none;
     background: transparent;
@@ -989,7 +993,7 @@ li.slick-active button {
 
 .skills {
     background: var(--secondary-color-grey-10);
-    padding: 80px 150px;
+    padding: 80px 0px;
 }
 
 .container-skills {
@@ -997,6 +1001,7 @@ li.slick-active button {
     justify-content: center;
     align-items: center;
     gap: 97px;
+    flex-wrap: wrap;
 }
 
 .skills-content {
@@ -1099,6 +1104,8 @@ li.slick-active button {
     display: flex;
     gap: 72px;
     align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .experiance-block {
