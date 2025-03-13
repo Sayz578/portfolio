@@ -1178,3 +1178,8 @@ li.slick-active button {
 }
 
 /* end mypartners */
+
+.header__service {
+    background: url(../images/service-bg.jpg) no-repeat center;
+    background-size: cover;
+}
