@@ -1183,3 +1183,49 @@ li.slick-active button {
     background: url(../images/service-bg.jpg) no-repeat center;
     background-size: cover;
 }
+
+/* faq */
+
+.faq-title {
+    justify-content: center;
+    margin-bottom: 32px;
+}
+
+.faq .container {
+    background: var(--secondary-color-grey-10);
+    padding: 80px 0px;
+}
+
+.faq-wrapp {
+    max-width: 752px;
+    width: 100%;
+    margin: auto;
+    border-top: 1px solid #dfe2e5;
+    padding-top: 32px;
+}
+
+.dropdown-item {
+    padding: 27px 24px;
+    border: 1px solid #dfe2e5;
+    border-radius: 4px;
+}
+
+/* .dropdown-item:last-child {
+    margin-bottom: 0;
+} */
+
+.dropdown-item:not(:last-child) {
+    margin-bottom: 24px;
+}
+
+.dropdown-block {
+    display: none;
+}
+
+.dropdown-title {
+    font-family: var(--second-family);
+    font-size: 20px;
+    color: #000;
+}
+
+/* end faq */
