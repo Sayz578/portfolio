@@ -119,3 +119,15 @@ btnUp.addEventListener("click", function () {
         behavior:"smooth"
     })
 })
+
+const dropTitle = document.querySelectorAll(".dropdown-title")
+console.log(dropTitle);
+for (const element of dropTitle) {
+    element.addEventListener("click",function () {
+        for (const key of dropTitle) {
+            key.classList.remove("active")
+        }
+        element.classList.add("active")
+    })
+}
+
