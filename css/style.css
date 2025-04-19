@@ -297,6 +297,11 @@ main {
     font-weight: 700;
 }
 
+.header__portfolio {
+    background: url(../images/portfolio-bg.jpg) no-repeat center/cover;
+    padding-top: 87px;
+}
+
 /* end header */
 
 

@@ -120,12 +120,17 @@ btnUp.addEventListener("click", function () {
     })
 })
 
+// faq block
 const dropTitle = document.querySelectorAll(".dropdown-title")
-console.log(dropTitle);
+const dropBlock = document.querySelectorAll (".dropdown-block")
+console.log(dropBlock);
 for (const element of dropTitle) {
     element.addEventListener("click",function () {
         for (const key of dropTitle) {
             key.classList.remove("active")
+            for (const item of dropBlock) {
+                item.classList.remove("active")
+            }
         }
         element.classList.add("active")
     })
