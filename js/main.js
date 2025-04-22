@@ -126,13 +126,22 @@ const dropBlock = document.querySelectorAll (".dropdown-block")
 console.log(dropBlock);
 for (const element of dropTitle) {
     element.addEventListener("click",function () {
+        const parent = element.parentElement
+        const block = parent.querySelector(".dropdown-block")
+        if (element.classList.contains("active")) {
+            element.classList.remove("active")
+            block.classList.remove("active")
+            return
+        }
         for (const key of dropTitle) {
             key.classList.remove("active")
-            for (const item of dropBlock) {
-                item.classList.remove("active")
-            }
+        }
+        for (const item of dropBlock) {
+            item.classList.remove("active")
+            
         }
         element.classList.add("active")
+        block.classList.add("active")
     })
 }
 

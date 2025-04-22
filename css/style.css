@@ -1224,7 +1224,17 @@ li.slick-active button {
 }
 
 .dropdown-block {
-    display: none;
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    padding: 0;
+    transition: .5s linear;
+}
+
+.dropdown-block.active {    
+    min-height: 60px;
+    opacity: 1;
+    padding: 10px 0;
 }
 
 .dropdown-title {
